@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="currencyViewModel"
+            type="com.example.p4.CurrencyViewModel" />
+
+        <variable
+            name="currencyFragment"
+            type="com.example.p4.CurrencyFragment" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/purple5"
+        tools:context=".CurrencyFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:context=".CurrencyFragment">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        android:id="@+id/iran_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/iran_flag"
+                        app:srcCompat="@drawable/iran" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/rial"
+                        style="@style/Widget.p4.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        app:errorIconDrawable="@drawable/ic_error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/rial_textField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/rial"
+                            android:inputType="numberDecimal"
+                            android:text="@{currencyViewModel.currentRial.toString()}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        android:id="@+id/usa_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/usa_flag"
+                        app:srcCompat="@drawable/usa" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/dollar_us"
+                        style="@style/Widget.p4.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:errorIconDrawable="@drawable/ic_error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dollarUS_textField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/dollar_us"
+                            android:inputType="numberDecimal"
+                            android:text="@{currencyViewModel.currentDollarUS.toString()}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        android:id="@+id/canada_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/canada_flag"
+                        app:srcCompat="@drawable/canada" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/dollar_canada"
+                        style="@style/Widget.p4.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:errorIconDrawable="@drawable/ic_error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dollarCanada_textField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/dollar_canada"
+                            android:inputType="numberDecimal"
+                            android:text="@{currencyViewModel.currentDollarCanada.toString()}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        android:id="@+id/england_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/england_flag"
+                        app:srcCompat="@drawable/england" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/pound"
+                        style="@style/Widget.p4.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:errorIconDrawable="@drawable/ic_error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/pound_textField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/pound"
+                            android:inputType="numberDecimal"
+                            android:text="@{currencyViewModel.currentPound.toString()}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        android:id="@+id/germany_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/germany_flag"
+                        app:srcCompat="@drawable/germany" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/euro"
+                        style="@style/Widget.p4.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:errorIconDrawable="@drawable/ic_error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/euro_textField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/euro"
+                            android:inputType="numberDecimal"
+                            android:text="@{currencyViewModel.currentEuro.toString()}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+                <TableRow style="@style/tableRow">
+
+                    <ImageView
+                        android:id="@+id/emirates_imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/emirates_flag"
+                        app:srcCompat="@drawable/emirates" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/dirham"
+                        style="@style/Widget.p4.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:errorIconDrawable="@drawable/ic_error">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dirham_textField"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/dirham"
+                            android:inputType="numberDecimal"
+                            android:text="@{currencyViewModel.currentDirham.toString()}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/table" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

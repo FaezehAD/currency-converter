@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="enter_value">hint</string>
+    <string name="canada_flag">Canada flag</string>
+    <string name="iran_flag">Iran flag</string>
+    <string name="germany_flag">Germany flag</string>
+    <string name="usa_flag">USA flag</string>
+    <string name="emirates_flag">Emirate flag</string>
+    <string name="england_flag">England flag</string>
+
+    <string name="rial">amount in rials</string>
+    <string name="dollar_us">amount in dollars (US)</string>
+    <string name="dollar_canada">amount in dollars (Canada)</string>
+    <string name="euro">amount in euros</string>
+    <string name="pound">amount in pounds</string>
+    <string name="dirham">amount in dirhams</string>
+
+    <string name="zero">0</string>
+    <string name="button">reset values</string>
+    <string name="invalid_input">invalid input!</string>
+
+</resources>

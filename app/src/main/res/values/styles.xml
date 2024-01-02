@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Widget.p4.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="backgroundColor">@color/purple1</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:height">25dp</item>
+        <item name="boxStrokeErrorColor">@color/red_700</item>
+        <item name="errorIconTint">@color/red_700</item>
+        <item name="errorTextColor">@color/red_700</item>
+        <item name="errorIconDrawable">@drawable/ic_error</item>
+    </style>
+
+    <style name="tableRow">
+        <item name="background">@color/black</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginVertical">20dp</item>
+        <item name="height">25dp</item>
+    </style>
+</resources>
